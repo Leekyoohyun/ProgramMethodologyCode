@@ -1,3 +1,5 @@
+package week2;
+
 import javax.swing.*;
 
 public class Mi2Km {

@@ -1,3 +1,5 @@
+package week2;
+
 public class CoinCalculator {
     public static void main(String[] args) {
         int quarters = 9;
