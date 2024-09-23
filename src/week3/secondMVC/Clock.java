@@ -1,5 +1,9 @@
 package week3.secondMVC;
 
-public class Clock {
+import java.time.LocalTime;
 
+public class Clock {
+    LocalTime whatTimeIsNow(){
+        return LocalTime.now();
+    }
 }
