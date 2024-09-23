@@ -7,4 +7,6 @@ public class Temperature {
         Controller c = new Controller();
         c.control(m,v);
     }
+
+    // 실행 starter
 }

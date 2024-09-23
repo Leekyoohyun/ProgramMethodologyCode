@@ -5,5 +5,7 @@ public class Controller {
         double c = v.getTemperature();
         double f = m.ctof(c);
         v.showTemperature(c,f);
+
+        //왜 Controller를 만들어야하는가
     }
 }
