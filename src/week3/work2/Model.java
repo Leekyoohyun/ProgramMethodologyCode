@@ -5,6 +5,8 @@ import java.time.Period;
 
 public class Model {
     Period getResult(){
-        return Period.between(LocalDate.now(), LocalDate.of(2024, 12,25));
+        LocalDate today = LocalDate.now();
+        LocalDate christmas = LocalDate.of(today.getYear(), 12, 25);
+        return Period.between(today,christmas);
     }
 }
