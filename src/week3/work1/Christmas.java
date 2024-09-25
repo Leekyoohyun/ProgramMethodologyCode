@@ -6,6 +6,7 @@ import java.time.Period;
 
 public class Christmas {
     public static void main(String[] args) {
+        // MVC 구조를 맞추어 코드를 만드는게 어떤 점에서 중요한가? 생각해볼 필요가 있음.
         LocalDate today = LocalDate.now();
         LocalDate christmas = LocalDate.of(2024,12,25);
         JOptionPane.showMessageDialog(null, "오늘은 "+today);
