@@ -1,5 +1,9 @@
 package week3.secondMVC;
 
-public class Model {
+import java.time.LocalTime;
 
+public class Model {
+    LocalTime whatTimeIsItNow(){
+        return LocalTime.now();
+    }
 }
