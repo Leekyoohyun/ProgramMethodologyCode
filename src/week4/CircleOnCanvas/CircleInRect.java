@@ -3,24 +3,24 @@ package week4.CircleOnCanvas;
 import javax.swing.*;
 import java.awt.*;
 
-public class CircleInRect extends JFrame {
+public class CircleInRect extends JPanel {
 
     public CircleInRect() {
         JFrame frame = new JFrame();
         frame.setTitle("Circle In Rect");
-        frame.setSize(500, 400);
+        frame.setSize(300,200);
         frame.getContentPane().add(this);
         frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
-    public void paint(Graphics g) {
-        g.setColor(Color.WHITE);
-        g.fillRect(0, 0, 500, 400);
-        g.setColor(Color.red);
-        g.drawRect(250, 200, 100, 50);
+    public void paintComponent(Graphics g) {
+        g.setColor(Color.black);
+        g.fillRect(0, 0, 300, 200);
+        g.setColor(Color.white);
+        g.drawRect(0, 50, 100, 50);
         g.setColor(Color.blue);
-        g.fillOval(250, 200, 50, 50);
+        g.fillOval(0, 50, 50, 50);
     }
 
     public static void main(String[] args) {
