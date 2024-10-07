@@ -12,7 +12,7 @@ public class GrowingEgg extends JPanel {
         frame.setSize(WIDTH, WIDTH);
         frame.getContentPane().add(this);
         frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
     public void paintComponent(Graphics g) {
