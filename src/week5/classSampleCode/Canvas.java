@@ -1,4 +1,4 @@
-package week5.writeOnCanvas10_7;
+package week5.classSampleCode;
 
 import javax.swing.*;
 import java.awt.*;
