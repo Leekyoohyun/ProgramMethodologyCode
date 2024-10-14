@@ -20,7 +20,7 @@ public class AccountController {
         char command = reader.readCommand("입금 D금액, 출금 W금액, 종료 Q");
         if(command == 'Q'){
             writer.showTransaction("서비스를 마칩니다.");
-            return;
+            System.exit(0);
         }
         else if(command == 'D'){
             int amount = reader.readAmount();
