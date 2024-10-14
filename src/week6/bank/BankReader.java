@@ -7,7 +7,7 @@ public class BankReader {
 
     /* BankReader - 입력기 초기화 */
     public BankReader() {
-        input_line = " ";
+        input_line = "";
     }
 
     /*
@@ -24,4 +24,13 @@ public class BankReader {
     readAmount - 요청 액수 파악
     @return 금액, 문제가 발생하면 알리고 0 리턴
      */
+    public int readAmount(){
+        int amount = 0;
+        String s = input_line.substring(1, input_line.length());
+        s = s.trim();
+        if(s.length() > 0)
+            amount = Integer.parseInt(s);
+        else JOptionPane.showMessageDialog(null, "금액 입력 오류");
+        return amount;
+    }
 }

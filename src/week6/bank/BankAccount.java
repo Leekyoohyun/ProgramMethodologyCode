@@ -49,7 +49,7 @@ public class BankAccount {
     getBalance - 잔액 확인
     * @return 잔액
      */
-    public int getBalance(){
+    public int getBalance() {
         return balance;
     }
 
