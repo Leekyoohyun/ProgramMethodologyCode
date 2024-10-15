@@ -12,26 +12,28 @@ public class Dealer {
         Player second = p2;
 
         while (true) {
-            // 누적 점수가 작은 플레이어가 먼저 던진다.
-            if (p2.points() < p1.points()) {
-                first = p2;
-                second = p1;
-            }
 
             // 각 플레이어가 주사위를 던진다.
             Dice dice1 = new Dice();
             Dice dice2 = new Dice();
 
-            first.play(dice1);
-            second.play(dice2);
 
-            // 승패를 결정한다.
+            // 먼저 던지기 설정(... 맞니?)
+            if (p2.points() < p1.points()) {
+                second.play(dice2);
+                first.play(dice1);
+            }else{
+                first.play(dice1);
+                second.play(dice2);
+            }
+
+            // 승패를 결정
             decideWinner(first, second);
 
-            // 게임 보드를 갱신한다.
+            // 게임 보드를 갱신
             b.repaint();
 
-            // 게임을 계속할지 여부를 물어본다.
+            // 게임을 계속할지
             if (r.wantToContinue() != 0) {
                 System.exit(0); // 게임 종료
             }
