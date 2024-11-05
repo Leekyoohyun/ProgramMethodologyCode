@@ -4,11 +4,10 @@ public class SlidePuzzleBoard {
     private PuzzlePiece[][] board;
     private int emptyRow;
     private int emptyCol;
-    private final int SIZE;
+    private final int SIZE = 4;
 
     // 생성자: 퍼즐 보드를 SIZE 크기로 초기화
-    public SlidePuzzleBoard(int size) {
-        this.SIZE = size;
+    public SlidePuzzleBoard() {
         board = new PuzzlePiece[SIZE][SIZE];
         initializeBoard();
     }
