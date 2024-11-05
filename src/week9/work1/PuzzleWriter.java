@@ -38,7 +38,7 @@ public class PuzzleWriter extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.setColor(Color.YELLOW);
+        g.setColor(Color.red);
         g.fillRect(0, 0, panelWidth, panelWidth); // 배경을 노란색으로 설정
         paintBoard(offset, offset, SIZE, squareSize, g); // 퍼즐 보드 그리기
     }
@@ -65,7 +65,7 @@ public class PuzzleWriter extends JPanel {
 
                 // 퍼즐 조각의 faceValue 표시 (빈칸은 표시하지 않음)
                 if (piece != null) {
-                    g.setColor(Color.BLACK);
+                    g.setColor(Color.BLUE);
                     g.drawString(String.valueOf(piece.faceValue()), xPosition + size / 2 - 5, yPosition + size / 2 + 5);
                 }
             }
