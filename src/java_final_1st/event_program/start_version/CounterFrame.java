@@ -1,4 +1,4 @@
-package java_final_1st.event_program.first_baisc;
+package java_final_1st.event_program.start_version;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,6 +23,7 @@ public class CounterFrame extends JFrame implements ActionListener {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
+    //버튼 누르기 액션 이벤트 처리
     public void actionPerformed(ActionEvent e){
         count.increment();
         label.setText("count = "+count.countOf());
