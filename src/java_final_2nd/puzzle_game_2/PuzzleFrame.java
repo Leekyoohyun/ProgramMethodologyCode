@@ -1,4 +1,4 @@
-package java_final_1st.event_program.puzzleGame;
+package java_final_2nd.puzzle_game_2;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +6,6 @@ import java.awt.*;
 public class PuzzleFrame extends JFrame {
     private SlidePuzzleBoard board;
     private PuzzleButton[][] button_board;
-    ResetButton reset_button = new ResetButton();
 
     public PuzzleFrame(SlidePuzzleBoard b){
         board = b;
@@ -20,21 +19,21 @@ public class PuzzleFrame extends JFrame {
             }
         }
         update();
-        setTitle("Puzzle");
+        setTitle("Slide Puzzle");
         setSize(250,250);
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
-    public void update() {
+    public void update(){
         PuzzlePiece pp;
         for(int row = 0; row < 4; row++){
             for(int col = 0; col < 4; col++){
-                pp = board.gerPuzzlePiece(row,col);
-                if(pp != null)
+                pp = board.getPuzzlePiece(row, col);
+                if(pp != null){
                     button_board[row][col].setText(Integer.toString(pp.getFace()));
-                else
-                    button_board[row][col].setText("");
+                }else
+                    button_board[row][col].setText((""));
             }
         }
     }
