@@ -7,3 +7,6 @@ week2: variables & operator \
 week3: MVC \
 week4: Canvas \
 week5: Constructure & Method
+
+week6 ~ 16: GUI programming 
+
